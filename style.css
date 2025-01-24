@@ -1,0 +1,150 @@
+body, html {
+    margin: 0; /* Entfernt äußere Abstände */
+    padding: 0; /* Entfernt Innenabstände */
+    height: 100%; /* Stellt sicher, dass die Elemente die volle Höhe einnehmen */
+    box-sizing: border-box; /* Sorgt für konsistentes Box-Modell */
+  }
+      /* Header */
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+        color: rgb(195, 185, 47);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      #header .logo {
+        text-align: center;
+        flex-grow: 1;
+      }
+  
+      #header .logo h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      #header .logo p {
+        margin: 0;
+        font-size: 14px;
+      }
+  
+      #header button {
+        background-color: #2fff00;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      #header button:hover {
+        background-color: #1a5a9f;
+      }
+  
+      /* Footer */
+      #footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; /* Elemente rechts ausrichten */
+  gap: 20px; /* Abstand zwischen den Links */
+  box-sizing: border-box; /* Padding wird in die Breite einbezogen */
+      }
+  
+      #footer a {
+        color: #d6b834;
+        text-decoration: none;
+        float: right;
+      }
+  
+      #footer a:hover {
+        text-decoration: underline;
+      }
+  
+      /* Karte */
+      #map {
+        position: absolute;
+        top: 60px; /* Höhe des Headers */
+        bottom: 40px; /* Höhe des Footers */
+        left: 0;
+        right: 0;
+      }
+  
+      /* Vergrößere die Schriftgröße innerhalb des Popups */
+  .leaflet-popup-content {
+    font-size: 18px; /* Passe die Schriftgröße an */
+    line-height: 1.6; /* Optional: Zeilenhöhe anpassen */
+  }
+  
+  /* Passe die maximale Breite des Popups an */
+  .leaflet-popup-content-wrapper {
+    max-width: 400px; /* Setze die maximale Breite des Popups */
+    padding: 20px; /* Optional: Innenabstand erhöhen */
+  }
+  
+  /* Passe die Breite des Popup-Kopfs an */
+  .leaflet-popup-tip {
+    width: 20px; /* Breite des Pfeils anpassen */
+    height: 10px; /* Höhe des Pfeils anpassen */
+  }
+  
+  /* Große, runde Cluster-Icons */
+  /* Große, runde Cluster-Icons */
+  .marker-cluster-large {
+    background-color: rgba(255, 193, 36, 0.805); /* Cluster-Hintergrundfarbe */
+    border-radius: 50%; /* Runde Form */
+    color: white; /* Textfarbe */
+    text-align: center; /* Text zentrieren */
+    font-size: 20px; /* Schriftgröße */
+    font-weight: bold; /* Fettschrift */
+    line-height: 80px; /* Gleiche Höhe wie das Icon */
+    width: 80px; /* Breite des Icons */
+    height: 80px; /* Höhe des Icons */
+    border: none; /* Keine zusätzliche Umrandung */
+    box-shadow: none; /* Entfernt Schatten um das Icon */
+  }
+  
+  /* Entferne die Standardstile der Box */
+  .marker-cluster-large div {
+    display: flex;
+    align-items: center; /* Zentriert den Text vertikal */
+    justify-content: center; /* Zentriert den Text horizontal */
+    padding: 0; /* Kein zusätzliches Padding */
+    margin: 0; /* Kein zusätzliches Margin */
+    width: 100%; /* Breite anpassen */
+    height: 100%; /* Höhe anpassen */
+    border: none; /* Keine Rahmen */
+    background: none; /* Kein Hintergrund */
+    box-shadow: none; /* Entferne Schatten */
+  }
+   /* Anpassung der Suchleiste */
+   .leaflet-control-geocoder {
+        width: 400px;  /* Breite der Suchleiste erhöhen */
+        height: 40px;  /* Höhe der Suchleiste */
+        font-size: 18px;  /* Schriftgröße vergrößern */
+      }
+  
+      .leaflet-control-geocoder input {
+        width: 100%;  /* Die Eingabefläche der Suchleiste auf 100% setzen */
+        height: 40px;  /* Höhe des Eingabefeldes */
+        font-size: 18px;  /* Schriftgröße im Eingabefeld */
+      }
+  
+      .leaflet-control-geocoder-button {
+        display: none;  /* Den Button zum Minimieren ausblenden, sodass die Suchleiste immer angezeigt wird */
+      }
+  
+      .leaflet-control-geocoder-form {
+        display: flex;  /* Flexbox für das Layout */
+        justify-content: flex-start;  /* Alignierung der Elemente */
+        width: 80%;  /* Form breiter machen */
+      }
+  

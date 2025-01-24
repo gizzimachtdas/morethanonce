@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFA500; /* Orange Hintergrundfarbe */
+    color: #000; /* Schwarzer Text */
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff; /* Weißer Hintergrund für Inhalte */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
